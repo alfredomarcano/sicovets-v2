@@ -1,0 +1,55 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.template{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.01fr 0.04fr repeat(1, auto) 0.01fr;
+	grid-template-areas: "header" "nav" "section" "footer";
+}
+
+	header{
+		grid-area: header;
+	}
+
+	nav{
+		grid-area: nav;
+	}
+
+	section{
+		grid-area: section;
+	}
+
+		.top_general{
+			display: grid;
+			grid-gap: 20px;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			grid-template-areas: "top_nav top_recibidos top_despacho top_latoneria" "top_nav top_pintura top_mecanica top_pulitura";
+		}
+
+		.top_nav{ grid-area: top_nav; }
+		
+		.top_recibidos{ grid-area: top_recibidos; }
+		
+		.top_despacho{ grid-area: top_despacho; }
+
+		.top_latoneria{ grid-area: top_latoneria; }
+
+		.top_pintura{ grid-area: top_pintura; }
+
+		.top_mecanica{ grid-area: top_mecanica; }
+
+		.top_pulitura{ grid-area: top_pulitura; }
+
+
+	footer{
+		grid-area: footer;
+	}
