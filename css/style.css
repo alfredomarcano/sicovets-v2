@@ -26,6 +26,10 @@ h1, h2, h3, h4, h5, h6{
 	margin-bottom: 0 !important;
 }
 
+textarea{
+	resize: none !important;
+}
+
 .form-control{
 	line-height:1.2 !important;
     line-height: 1.2 !important;
@@ -41,6 +45,7 @@ h1, h2, h3, h4, h5, h6{
 .br-2{ border-radius: 0.5rem }
 .br-3{ border-radius: 0.75rem }
 .br-4{ border-radius: 1rem }
+
 /*------ Login ------*/
 
 .fondo_login{
@@ -240,6 +245,24 @@ body{
 			font-size: 1.1rem;
 			font-weight: bold;
 		}
+
+		.galery-vehiculo{
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+			grid-gap: 10px;
+		}
+
+			.galery-vehiculo figure{
+				width: 100px;
+				height: 100px;
+				padding: 2rem;
+				background: white;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: black;
+				font-size: 1.5rem
+			}
 
 /*footer*/
 	footer{
