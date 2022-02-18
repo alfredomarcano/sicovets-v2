@@ -232,64 +232,209 @@
 						</div>
 
 						<div class="br-2 mt-2 px-3 py-2" style="background: #c4c4c423;">
-							<h4 class="text-center" style="margin-bottom: 0.5rem;">Funcionamientos del Vehiculo</h4>
+							<h4 class="text-center mb-3" style="margin-bottom: 0.5rem;">Funcionamientos del Vehiculo</h4>
 							<div class="row">
-								<div class="col-md-4 mb-2">
-									<div class="row">
-										<div class="col-md-6">
-											<label for="">Title</label>
-											<input type="text" class="form-control" placeholder="text content">
+								<div class="col-md-5 mb-2">
+									<div class="row func-veh">
+										<div class="col-md-4 text-center mb-3">
+											<select name="" id="" class="form-control">
+												<option value="" selected="selected" disabled="disabled">Llaves</option>
+												<option value="">Llave y Control</option>
+												<option value="">Llave</option>
+											</select>
 										</div>
-										<div class="col-md-6">
-											<label for="">Title</label>
-											<input type="text" class="form-control" placeholder="text content">
+										<div class="col-md-4 text-center mb-3">
+											<select name="" id="" class="form-control">
+												<option value="" selected="selected" disabled="disabled">Radio</option>
+												<option value="">Completo</option>
+												<option value="">Sin frontal</option>
+												<option value="">No Funciona</option>
+											</select>
 										</div>
-										<div class="col-md-6">
-											<label for="">Title</label>
-											<input type="text" class="form-control" placeholder="text content">
+										<div class="col-md-4 text-center mb-3">
+											<select name="" id="" class="form-control">
+												<option value="" selected="selected" disabled="disabled">Estinguidor</option>
+												<option value="">Completo</option>
+												<option value="">Sin Presinto</option>
+												<option value="">No Hay</option>
+											</select>
 										</div>
-										<div class="col-md-6">
-											<label for="">Title</label>
-											<input type="text" class="form-control" placeholder="text content">
+										<div class="col-md-12 text-center mb-3">
+											<ul class="d-flex mb-0 w-100 justify-content-between">
+												<li>
+													<select name="" id="" class="form-control">
+														<option value="" selected="selected" disabled="disabled">Luz DR</option>
+														<option value="">100%</option>
+														<option value="">75%</option>
+														<option value="">50%</option>
+														<option value="">25%</option>
+														<option value="">0%</option>
+													</select>
+												</li>
+												<li>
+													<select name="" id="" class="form-control">
+														<option value="" selected="selected" disabled="disabled">Luz DL</option>
+														<option value="">100%</option>
+														<option value="">75%</option>
+														<option value="">50%</option>
+														<option value="">25%</option>
+														<option value="">0%</option>
+													</select>
+												</li>
+												<li>
+													<select name="" id="" class="form-control">
+														<option value="" selected="selected" disabled="disabled">Luz TR</option>
+														<option value="">100%</option>
+														<option value="">75%</option>
+														<option value="">50%</option>
+														<option value="">25%</option>
+														<option value="">0%</option>
+													</select>
+												</li>
+												<li>
+													<select name="" id="" class="form-control">
+														<option value="" selected="selected" disabled="disabled">Luz TL</option>
+														<option value="">100%</option>
+														<option value="">75%</option>
+														<option value="">50%</option>
+														<option value="">25%</option>
+														<option value="">0%</option>
+													</select>
+												</li>
+											</ul>
 										</div>
-										<div class="col-md-6">
-											<label for="">Title</label>
-											<input type="text" class="form-control" placeholder="text content">
+										<div class="col-md-12 text-center mb-3">
+											<ul class="d-flex mb-0 w-100 justify-content-between">
+												<li>
+													<select name="" id="" class="form-control">
+														<option value="" selected="selected" disabled="disabled">Espejo LR</option>
+														<option value="">Completo</option>
+														<option value="">Sin Vidrio</option>
+														<option value="">Sin Tapa</option>
+														<option value="">Sin Cruce</option>
+														<option value="">No Hay</option>
+													</select>
+												</li>
+												<li>
+													<select name="" id="" class="form-control">
+														<option value="" selected="selected" disabled="disabled">Espejo LI</option>
+														<option value="">Completo</option>
+														<option value="">Sin Vidrio</option>
+														<option value="">Sin Tapa</option>
+														<option value="">Sin Cruce</option>
+														<option value="">No Hay</option>
+													</select>
+												</li>
+												<li>
+													<select name="" id="" class="form-control">
+														<option value="" selected="selected" disabled="disabled">Espejo Cen</option>
+														<option value="">Completo</option>
+														<option value="">Sin Vidrio</option>
+														<option value="">Sin Gancho</option>
+														<option value="">No Hay</option>
+													</select>
+												</li>
+											</ul>
 										</div>
-										<div class="col-md-6">
-											<label for="">Title</label>
-											<input type="text" class="form-control" placeholder="text content">
+										<div class="col-md-4 text-center mb-3">
+											<select name="" id="" class="form-control">
+												<option value="" selected="selected" disabled="disabled">Gato</option>
+												<option value="">Si</option>
+												<option value="">No</option>
+											</select>
 										</div>
-										<div class="col-md-6">
-											<label for="">Title</label>
-											<input type="text" class="form-control" placeholder="text content">
+										<div class="col-md-4 text-center mb-3">
+											<select name="" id="" class="form-control">
+												<option value="" selected="selected" disabled="disabled">Llave Cruz</option>
+												<option value="">Si</option>
+												<option value="">No</option>
+											</select>
 										</div>
-										<div class="col-md-6">
-											<label for="">Title</label>
-											<input type="text" class="form-control" placeholder="text content">
+										<div class="col-md-4 text-center mb-3">
+											<select name="" id="" class="form-control">
+												<option value="" selected="selected" disabled="disabled">Herramientas</option>
+												<option value="">Si</option>
+												<option value="">No</option>
+											</select>
 										</div>
-										<div class="col-md-6">
-											<label for="">Title</label>
-											<input type="text" class="form-control" placeholder="text content">
+										<div class="col-md-4 text-center mb-3">
+											<select name="" id="" class="form-control">
+												<option value="" selected="selected" disabled="disabled">Caucho Emer</option>
+												<option value="">Completo</option>
+												<option value="">Desinflado</option>
+												<option value="">Sin caucho</option>
+												<option value="">No</option>
+											</select>
 										</div>
-										<div class="col-md-6">
-											<label for="">Title</label>
-											<input type="text" class="form-control" placeholder="text content">
+										<div class="col-md-4 text-center mb-3">
+											<select name="" id="" class="form-control">
+												<option value="" selected="selected" disabled="disabled">Limpia Par</option>
+												<option value="">Ambos</option>
+												<option value="">Cepillo LD</option>
+												<option value="">Cepillo LI</option>
+												<option value="">No hay</option>
+											</select>
 										</div>
-										<div class="col-md-6">
-											<label for="">Title</label>
-											<input type="text" class="form-control" placeholder="text content">
+										<div class="col-md-4 text-center mb-3">
+											<select name="" id="" class="form-control">
+												<option value="" selected="selected" disabled="disabled">Tapa Caucho</option>
+												<option value="">4 tapas</option>
+												<option value="">3 tapas</option>
+												<option value="">2 tapas</option>
+												<option value="">1 tapas</option>
+												<option value="">No Hay</option>
+											</select>
 										</div>
-										<div class="col-md-6">
-											<label for="">Title</label>
-											<input type="text" class="form-control" placeholder="text content">
+										<div class="col-md-6 text-center mb-3">
+											<select name="" id="" class="form-control">
+												<option value="" selected="selected" disabled="disabled">Combustible Gasolina</option>
+												<option value="">Full</option>
+												<option value="">3/4</option>
+												<option value="">1/2</option>
+												<option value="">1/4</option>
+												<option value="">Reserva</option>
+												<option value="">No tiene</option>
+											</select>
+										</div>
+										<div class="col-md-6 text-center mb-3">
+											<select name="" id="" class="form-control">
+												<option value="" selected="selected" disabled="disabled">Combustible Gas</option>
+												<option value="">Full</option>
+												<option value="">3/4</option>
+												<option value="">1/2</option>
+												<option value="">1/4</option>
+												<option value="">Reserva</option>
+												<option value="">No tiene</option>
+											</select>
 										</div>
 									</div>
+									<table class="table table-striped">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Descripcion</th>
+												<th class="w-25">Acción</th>
+											</tr>
+										</thead>
+										<tbody>
+											<?php for ($i=0; $i < 12; $i++) { ?>
+												<tr id="$i">
+													<td><?php echo $i+1; ?></td>
+													<td></td>
+													<td>
+														<input class="form-check-input bg-green" type="checkbox" id="inlineCheckbox1" value="option1">
+														<input class="form-check-input bg-yellow" type="checkbox" id="inlineCheckbox2" value="option2">
+														<input class="form-check-input bg-red" type="checkbox" id="inlineCheckbox3" value="option3">
+													</td>
+												</tr>
+											<?php } ?>
+										</tbody>
+									</table>
 								</div>
-								<div class="col-md-8 mb-2">
-									<label for="">Estado del Vehiculo</label>
+								<div class="col-md-7 mb-2 text-center">
+									<label for="" class="">Detalles Vehiculo</label>
 									<figure class="bg-white">
-										<img src="" alt="">
+										<img src="img/Car-seccion.jpg" alt="" class="w-100 h-100">
 									</figure>
 								</div>
 							</div>

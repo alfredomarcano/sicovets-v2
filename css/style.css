@@ -28,7 +28,14 @@ h1, h2, h3, h4, h5, h6{
 
 .form-control{
 	line-height:1.2 !important;
+    line-height: 1.2 !important;
+    border:none !important;
+    border-bottom: 1px solid #ced4da !important;
 }
+
+.bg-red{ background: rgba(255, 0, 0, 0.50) !important; }
+.bg-yellow{ background: rgba(255, 255, 0, 0.50) !important }
+.bg-green{ background: rgba(0, 128, 0, 0.50) !important; }
 
 .br-1{ border-radius: 0.25rem }
 .br-2{ border-radius: 0.5rem }
@@ -214,14 +221,6 @@ body{
 		.rec{
 			box-shadow: 1px 2px 8px -1px #25262766;
 		}
-
-			.rec li:nth-child(1){
-				background: #01273e7d;
-				border-radius: 4px;
-				color: white;
-				padding: 2px 0 4px;
-				text-shadow: 2px 2px 1px #252627ad;
-			}
 			
 			.rec-items{
 				padding: 2px 10px;
@@ -236,6 +235,11 @@ body{
 			.rec-items:nth-child(2n+1){
 				background: #c3c4c543;
 			}
+
+		.func-veh label{
+			font-size: 1.1rem;
+			font-weight: bold;
+		}
 
 /*footer*/
 	footer{
