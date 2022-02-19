@@ -264,6 +264,9 @@ body{
 				font-size: 1.5rem
 			}
 
+		.circle-active{ display: block; }
+		.circle-disabled{ display: none; }
+
 /*footer*/
 	footer{
 		background: black;

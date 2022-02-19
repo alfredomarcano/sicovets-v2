@@ -471,8 +471,12 @@
 							</div>
 							<div class="br-2 mt-2 px-3 py-2" style="background: #c4c4c423;">
 								<ul class="d-flex justify-content-between mb-0">
-									<li>
+									<li class="d-flex justify-content-between align-items-center">
 										<span class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ModalAsignacion">Asignar</span>
+										<span style="font-size: 1.3rem; padding-left: 10px">
+											<i class="bi bi-x-circle circle-active" style="color: red;"></i>
+											<i class="bi bi-check-circle circle-disabled" style="color: green"></i>
+										</span>
 									</li>
 									<li>
 										<button class="btn btn-primary">Guardar</button>
@@ -481,6 +485,7 @@
 								</div>
 							</div>
 
+							<!-- Modal para asignar los trabajos a realizar -->
 							<div id="ModalAsignacion" class="modal">
 								<div class="modal-dialog">
 									<div class="modal-content">
@@ -566,7 +571,7 @@
 										</div>
 										<div class="modal-footer">
 									        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-									        <button type="button" class="btn btn-primary">Guardar</button>
+									        <button type="button" class="btn btn-primary asignar">Guardar</button>
 									    </div>
 									</div>
 								</div>
@@ -662,5 +667,12 @@
 		</ul>
 	</footer>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- <script type="text/javascript">
+		$('.asignar').on('click', function(){
+			removeClass('bi-x-circle');
+			addClass('bi-check-circle');
+		});
+	</script> -->
 </body>
 </html>
