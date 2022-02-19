@@ -452,8 +452,124 @@
 								</div>
 							</div>
 							<div class="br-2 mt-2 px-3 py-2" style="background: #c4c4c423;">
-								<h4 class="text-center mb-3" style="margin-bottom: 0.5rem;">Observacions</h4>
-								<textarea class="form-control mb-2" name="" id="" cols="30" rows="10"></textarea>
+								<div class="row">
+									<div class="col-md-7">
+										<h4 class="text-center" style="margin-bottom: 0.5rem;">Observacion</h4>
+										<textarea class="form-control mb-2" name="" id="" cols="30" rows="15"></textarea>
+									</div>
+									<div class="col-md-5 text-center">
+										<h4 for="">Firma Cliente</h4>
+										<figure class="bg-white" style="height: 8rem;">
+											<img src="" alt="">
+										</figure>
+										<h4 for="">Firma Encargado</h4>
+										<figure class="bg-white" style="height: 8rem;">
+											<img src="" alt="">
+										</figure>
+									</div>
+								</div>
+							</div>
+							<div class="br-2 mt-2 px-3 py-2" style="background: #c4c4c423;">
+								<ul class="d-flex justify-content-between mb-0">
+									<li>
+										<span class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ModalAsignacion">Asignar</span>
+									</li>
+									<li>
+										<button class="btn btn-primary">Guardar</button>
+										<span class="btn btn-danger">Cancelar</span>
+									</li>
+								</div>
+							</div>
+
+							<div id="ModalAsignacion" class="modal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+									        <h5 class="modal-title">Asignaciones</h5>
+									        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									    </div>
+									    <div class="modal-body">
+											<div class="row">
+												<div class="col-md-6">
+													<label for="">Mecanico</label>
+													<select name="" id="" class="form-control">
+														<option value="" disabled="disabled" selected="selected">Selecciona</option>
+														<option value="">
+															<span>(6)</span><h5>Jorge Gomez</h5>
+														</option>
+														<option value="">
+															<span>(3)</span><h5>Raul Martinez</h5>
+														</option>
+														<option value="">
+															<span>(2)</span><h5>Gerardo Lopez</h5>
+														</option>
+														<option value="">
+															<span>(7)</span><h5>Carlos Perez</h5>
+														</option>
+													</select>
+												</div>
+												<div class="col-md-6">
+													<label for="">Latonería</label>
+													<select name="" id="" class="form-control">
+														<option value="" disabled="disabled" selected="selected">Selecciona</option>
+														<option value="">
+															<span>(6)</span><h5>Jorge Gomez</h5>
+														</option>
+														<option value="">
+															<span>(3)</span><h5>Raul Martinez</h5>
+														</option>
+														<option value="">
+															<span>(2)</span><h5>Gerardo Lopez</h5>
+														</option>
+														<option value="">
+															<span>(7)</span><h5>Carlos Perez</h5>
+														</option>
+													</select>
+												</div>
+												<div class="col-md-6">
+													<label for="">Pintura</label>
+													<select name="" id="" class="form-control">
+														<option value="" disabled="disabled" selected="selected">Selecciona</option>
+														<option value="">
+															<span>(6)</span><h5>Jorge Gomez</h5>
+														</option>
+														<option value="">
+															<span>(3)</span><h5>Raul Martinez</h5>
+														</option>
+														<option value="">
+															<span>(2)</span><h5>Gerardo Lopez</h5>
+														</option>
+														<option value="">
+															<span>(7)</span><h5>Carlos Perez</h5>
+														</option>
+													</select>
+												</div>
+												<div class="col-md-6">
+													<label for="">Pulitura</label>
+													<select name="" id="" class="form-control">
+														<option value="" disabled="disabled" selected="selected">Selecciona</option>
+														<option value="">
+															<span>(6)</span><h5>Jorge Gomez</h5>
+														</option>
+														<option value="">
+															<span>(3)</span><h5>Raul Martinez</h5>
+														</option>
+														<option value="">
+															<span>(2)</span><h5>Gerardo Lopez</h5>
+														</option>
+														<option value="">
+															<span>(7)</span><h5>Carlos Perez</h5>
+														</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+									        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+									        <button type="button" class="btn btn-primary">Guardar</button>
+									    </div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -514,40 +630,6 @@
 										</ul>
 									</div>
 								</div>
-									<!-- <div class="col-md-4 mb-2">
-										<label for="">Nombres</label>
-										<input type="text" class="form-control" placeholder="Nombres">
-									</div>
-									<div class="col-md-4 mb-2">
-										<label for="">Apellidos</label>
-										<input type="text" class="form-control" placeholder="Apellidos">
-									</div>
-									<div class="col-md-4 mb-2">
-										<label for="">Teléfono</label>
-										<input type="text" class="form-control" placeholder="(0) 000-000-0000">
-									</div>
-									<div class="col-md-1 mb-2">
-										<label for="">Doc.</label>
-										<select name="" id="" class="form-control">
-											<option value="">...</option>
-											<option value="">V</option>
-											<option value="">E</option>
-											<option value="">J</option>
-										</select>
-									</div>
-									<div class="col-md-2 mb-2">
-										<label for="">Cedula / Rif</label>
-										<input type="text" class="form-control" placeholder="00000000-0">
-									</div>
-									<div class="col-md-3 mb-2">
-										<label for="">Correo</label>
-										<input type="text" class="form-control" placeholder="email@mail.com">
-									</div>
-									<div class="col-md-6 mb-2">
-										<label for="">Dirección</label>
-										<input type="text" class="form-control" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
-									</div>
-								</div> -->
 							</div>
 
 							<div class="br-2 mt-2 px-3 py-2" style="background: #c4c4c423;">
@@ -569,25 +651,6 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div class="container-xxl">
-				<div class="row">
-					<div class="col-md-4 p-3">
-						<div class="bg-white p-2 h-100">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quae cupiditate quidem non consequatur delectus eius, vero nam totam, quibusdam nobis repellendus, iste amet cum rerum dolor error, molestias harum.
-						</div>
-					</div>
-					<div class="col-md-4 p-3">
-						<div class="bg-white p-2 h-100">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugit voluptates officiis dolores modi, ab facilis, quam, laboriosam quisquam animi rerum voluptate iste dolor. Veritatis deleniti nam tempora vel culpa.
-						</div>
-					</div>
-					<div class="col-md-4 p-3">
-						<div class="bg-white p-2 h-100">
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, laborum omnis. Quam, molestiae quaerat, dignissimos tempora praesentium numquam dicta explicabo voluptatibus aut assumenda, quae eos quo commodi est, eveniet eius!
-						</div>
-					</div>
-				</div>
-			</div> -->
 		</article>
 	</section>
 	<footer>
@@ -598,5 +661,6 @@
 			<li>lorem</li>
 		</ul>
 	</footer>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
