@@ -8,10 +8,15 @@
 </head>
 <body>
 	<div class="fondo_login">
-		<form action="admin.php">
+		<form action="admin.php" class="for-login">
+			<div class="panel-img">
+				<figure>
+					<img src="img/login.png" alt="">
+				</figure>
+			</div>
 			<div class="panel_login">
 				<div class="panel_logo">
-					<img src="img/logo2.png" alt="">
+					<img src="img/logo-1.png" alt="">
 				</div>
 				<div class="form-group">
 					<label for="">Usuario:</label>
@@ -29,7 +34,10 @@
 					<button>Ingresar</button>
 				</div>
 			</div>
-		</form>
+			
+		</form> 
 	</div>
 </body>
 </html>
+<!-- 
+-->
