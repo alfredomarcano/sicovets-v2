@@ -2,8 +2,7 @@
 <html>
 <head>
 	<title>Sicovets - Sistema de Control para Vehiculos de Talleres y Seguros</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/login.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
 </head>

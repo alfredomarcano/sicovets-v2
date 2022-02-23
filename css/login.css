@@ -1,0 +1,54 @@
+.fondo_login{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url(../img/fondo.jpg);
+	background-size: 100% 100%;
+	background-attachment: scroll;
+}
+
+.panel_login{
+	background: rgba(255,255,255,0.5);
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	transform: translate(-25%, -50%);
+	padding: 2em;
+	border-radius: 10px;
+	box-shadow: 4px 4px 15px 1px #252627de; 
+}
+
+.form-group{
+	display: flex;
+	flex-direction: column;
+}
+
+.form-group label{
+	padding: 10px 12px;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.form-group input{
+	padding: 10px 12px;
+	border-radius: 8px;
+}
+
+.panel_cuentas{
+	display: flex;
+	justify-content: space-between;
+	padding: 12px 0px;
+}
+
+.form-group button{
+	padding: 12px;
+	border-radius: 8px;
+	font-size: 18px;
+	font-weight: 500;
+	background: #7c102f;
+	border:none;
+	box-shadow: 0px 0px 1px 2px #252627de;
+	color: white;
+}
