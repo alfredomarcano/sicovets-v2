@@ -131,7 +131,7 @@ body{
 
 			.top_general {
 			    display: grid;
-			    grid-template-columns: 250px repeat(3, 1fr);
+			    grid-template-columns: 200px repeat(3, 1fr);
 			    grid-template-rows: 220px 220px;
 			    grid-gap: 20px;
 			    height: 100%;
