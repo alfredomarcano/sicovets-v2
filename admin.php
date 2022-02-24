@@ -17,7 +17,6 @@
 			</figure>
 			<ul>
 				<li>
-					<i class="bi bi-house"> </i>
 					<span>Dashboard</span>
 				</li>
 				<li>
@@ -54,7 +53,7 @@
 				</li>
 			</ul>
 			<ul>
-				<li><a href=""><i class="bi bi-house"></i></a></li>
+				<li><a href="index.php"><i class="bi bi-box-arrow-right"></i></a></li>
 			</ul>
 		</nav>
 	</header>

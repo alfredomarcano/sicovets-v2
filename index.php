@@ -11,12 +11,12 @@
 		<form action="admin.php" class="for-login">
 			<div class="panel-img">
 				<figure>
-					<img src="img/login.png" alt="">
+					<img src="img/login-3.png" alt="">
 				</figure>
 			</div>
 			<div class="panel_login">
 				<div class="panel_logo">
-					<img src="img/logo-1.png" alt="">
+					<img src="img/login.png" alt="">
 				</div>
 				<div class="form-group">
 					<label for="">Usuario:</label>

@@ -7,7 +7,7 @@
 .fondo_login{
 	height: 100vh;
 	position: relative;
-	background: linear-gradient(-58deg, #cf1f1f 20%, #cf1f1f 20%, #5698b7 20%, #5698b7 23%, #951b0c 23%, #951b0c 25%, #f2f2f2 25%, #fff 29%,  #fff 85%, #5698b7 85%);
+	background: linear-gradient(-58deg, #cf1f1f 20%, #cf1f1f 20%, #5698b7 20%, #5698b7 23%, #951b0c 23%, #951b0c 25%, #f2f2f2 25%, #fff 29%,  #fff 85%, #951b0c 85%);
 	/*background: url(../img/fondo-3.png);*/
 	background-size: 100% 100%;
 }
@@ -27,7 +27,7 @@
 .panel-img{
 	width: 60%;
 	position: relative;
-	background: #ca1b20;
+	background: #5698b7;
 	border-radius: 10px 20px 20px 10px;
 }
 	.panel-img figure{
