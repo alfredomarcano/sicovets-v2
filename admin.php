@@ -80,51 +80,75 @@
 						</li>
 					</ul>
 				</div>
-				<div class="top_recibidos">
-					<a href="">
+				<div class="top_recibidos top_boton_nav">
+					<a href="recepcion.php">
 						<ul>
-							<li><h5>16</h5></li>
 							<li>Recepción</li>
+							<li><h5>16</h5></li>
 						</ul>
 					</a>
 				</div>
-				<div class="top_despacho">
+				<div class="top_despacho top_boton_nav">
 					<a href="">
 						<ul>
-							<li><h5>16</h5></li>
 							<li>Despacho</li>
+							<li><h5>16</h5></li>
 						</ul>
 					</a>
 				</div>
-				<div class="top_mecanica">
+				<div class="top_mecanica top_boton_nav">
 					<a href="">
 						<ul>
-							<li><h5>16</h5></li>
 							<li>Mecanica</li>
+							<li><h5>16</h5></li>
 						</ul>
 					</a>
 				</div>
-				<div class="top_latoneria">
+				<div class="top_latoneria top_boton_nav">
 					<a href="">
 						<ul>
-							<li><h5>16</h5></li>
 							<li>Latoneria</li>
+							<li><h5>16</h5></li>
 						</ul>
 					</a>
 				</div>
-				<div class="top_pintura">
+				<div class="top_pintura top_boton_nav">
 					<a href="">
 						<ul>
-							<li><h5>16</h5></li>
 							<li>Pintura</li>
+							<li><h5>16</h5></li>
 						</ul>
 					</a>
 				</div>
-				<div class="top_pulitura">
+				<div class="top_pulitura top_boton_nav">
 					<a href="">
 						<ul>
-							<li><h5>16</h5></li>
 							<li>Pulitura</li>
+							<li><h5>16</h5></li>
+						</ul>
+					</a>
+				</div>
+				<div class="top_repuestos top_boton_nav">
+					<a href="">
+						<ul>
+							<li>Repuestos</li>
+							<li><h5>16</h5></li>
+						</ul>
+					</a>
+				</div>
+				<div class="top_almacen top_boton_nav">
+					<a href="">
+						<ul>
+							<li>Almacen</li>
+							<li><h5>16</h5></li>
+						</ul>
+					</a>
+				</div>
+				<div class="top_pulitura top_boton_nav">
+					<a href="">
+						<ul>
+							<li>Cotizaciones</li>
+							<li><h5>16</h5></li>
 						</ul>
 					</a>
 				</div>

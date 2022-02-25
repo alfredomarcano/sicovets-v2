@@ -126,13 +126,14 @@ body{
 		overflow-y: auto;
 	}
 		.general{
-			margin: 1rem 0 ;
+			height: 100%;
+		    padding: 2rem;
 		}
 
 			.top_general {
 			    display: grid;
 			    grid-template-columns: 200px repeat(3, 1fr);
-			    grid-template-rows: 220px 220px;
+			    grid-template-rows: repeat(200px, 1fr);
 			    grid-gap: 20px;
 			    height: 100%;
 			}
@@ -144,47 +145,58 @@ body{
 			}
 
 			.top_nav:nth-child(1) {
-				background: #951b0c;
-				grid-row: 1/3;
+				background: #951b0c !important;
+				grid-row: 1/4;
 				grid-column: 1/2;
 				height: 100%;
 			}
 			
-			.top_nav, .top_recibidos, .top_despacho, .top_latoneria, .top_pintura, .top_mecanica, .top_pulitura{
+			.top_nav, .top_boton_nav{
 				border-radius: 6px;
 				color: white;
 				position: relative;
 			}
 
-				.top_nav ul, .top_recibidos ul, .top_despacho ul, .top_latoneria ul, .top_pintura ul, .top_mecanica ul, .top_pulitura ul{
-					padding: 14px !important;
+				.top_nav ul{ 
 					display: flex;
 					flex-direction: column;
+					justify-content: space-around; 
 					height: 100%;
-					justify-content: flex-end;
-				    margin-bottom: 0;
-				    border-radius: 6px
+					background: #951b0c;
+				    border-radius: 6px;
 				}
 
-				.top_nav ul{ justify-content: space-around; }
+				.top_boton_nav ul{
+					text-shadow: 1px 1px 1px black;
+				    font-size: 1.5rem;
+				    position: absolute;
+				    bottom: 0;
+				    left: 0rem;
+				    background: linear-gradient(45deg, #252627f3, transparent);
+				    width: 100%;
+				    padding: 0.2rem 0.7rem !important;
+				    margin-bottom: 0;
+				    display: flex;
+				    justify-content: space-between;
+				    align-items: center;
+				}
+
 
 			.top_recibidos{ background: url(../img/recepcion.jpg); background-size: 100% 100%;}
-			.top_recibidos ul{ background: linear-gradient(65deg, #5698b7 35%, transparent 35%);}
 			
 			.top_despacho{ background: url(../img/despacho.jpg); background-size: 100% 100%;}
-			.top_despacho ul{ background: linear-gradient(65deg, #5698b7 35%, transparent 35%);}
 			
 			.top_pintura{ background: url(../img/pintura.jpg); background-size: 100% 100%;}
-			.top_pintura ul{ background: linear-gradient(65deg, #5698b7 35%, transparent 35%);}
 			
 			.top_mecanica{ background: url(../img/mecanica.jpg); background-size: 100% 100%;}
-			.top_mecanica ul{ background: linear-gradient(65deg, #5698b7 35%, transparent 35%);}
 			
 			.top_pulitura{ background: url(../img/pulitura.png); background-size: 100% 100%;}
-			.top_pulitura ul{ background: linear-gradient(65deg, #5698b7 35%, transparent 35%);}
 			
 			.top_latoneria{ background: url(../img/latoneria.png); background-size: 100% 100%;}
-			.top_latoneria ul{ background: linear-gradient(65deg, #5698b7 35%, transparent 35%);}
+
+			.top_repuestos{ background: url(../img/repuestos.jpg); background-size: 100% 100%;}
+
+			.top_almacen{ background: url(../img/almacen.jpg); background-size: 100% 100%;}
 
 
 
