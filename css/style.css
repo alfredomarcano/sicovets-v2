@@ -54,8 +54,9 @@ textarea{
 
 body{
 	display: grid;
+	grid-template-columns: 60px 1fr;
 	grid-template-rows: 50px 1fr auto;
-	grid-template-areas: 'header' 'contenidos' 'footer';
+	grid-template-areas: 'nav nav' 'header contenidos' 'header footer';
 	height: 100vh;
 	overflow: hidden
 }
@@ -66,58 +67,63 @@ body{
 		display: -moz-flex;
 		display: -ms-flex;
 		display: -o-flex;
-		position: sticky;
-		top: 0;
-		width: 100%;
-		z-index: 99;
+		display: flex;
+		flex-direction: column;
 		grid-area: header;
+		background: purple
 	}
 
-	/*nav*/
-		nav{
-			display: -webkit-flex;
-			display: -moz-flex;
-			display: -ms-flex;
-			display: -o-flex;
+		header ul{
 			display: flex;
 			justify-content: space-between;
+			flex-direction: column;
 			align-items: center;
-			background: #cf1f1f;
-			color: white;
-			width: 100%;
-			
+			list-style: none;
+			margin-bottom: 0;
 		}
 
-			nav figure{
-				height: 30px;
-				width: 80px;
-				margin-bottom: 0;
-			}
+		header ul li{
+			width: 100%;
+			padding: 4px;
+			text-align: center;
+			transition: 0.5s;
+			display: flex;
+			font-size: 20px;
+		}
 
-			nav ul{
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				list-style: none;
-				margin-bottom: 0;
-			}
+		header ul li:hover{
+			background: orange;
+			cursor: pointer;
+			transition: 1s;
+			transform: translateY(5px);
+			color: white;
+			border-radius: 0px 0px 10px 10px;
+		}
 
-			nav ul li{
-				width: 100%;
-				padding: 4px;
-				text-align: center;
-				transition: 0.5s;
-				font-size: 14px;
-			}
+	/*nav*/
+	nav{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: #cf1f1f;
+		color: white;
+		width: 100%;
+		grid-area: nav;
+	}
 
-			nav ul li:hover{
-				background: orange;
-				cursor: pointer;
-				transition: 1s;
-				transform: translateY(5px);
-				color: white;
-				border-radius: 0px 0px 10px 10px;
-			}
+		.TitSys{
+			background: red;
+			height: 100%;
+			width: 160px;
+			display: flex;
+			align-items: center;
+			padding-left: 1rem;
+			font-size: 2rem
+		}
 
 	/*section*/
 	.contenidos{
@@ -198,8 +204,6 @@ body{
 
 			.top_almacen{ background: url(../img/almacen.jpg); background-size: 100% 100%;}
 
-
-
 	/* modulo recepción */
 	.rec{
 		box-shadow: 1px 2px 8px -1px #25262766;
@@ -219,37 +223,38 @@ body{
 			background: #c3c4c543;
 		}
 
-	.func-veh label{
-		font-size: 1.1rem;
-		font-weight: bold;
-	}
-
-	.galery-vehiculo{
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-		grid-gap: 10px;
-	}
-
-		.galery-vehiculo figure{
-			width: 100px;
-			height: 100px;
-			padding: 2rem;
-			background: white;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			color: black;
-			font-size: 1.5rem
+		.func-veh label{
+			font-size: 1.1rem;
+			font-weight: bold;
 		}
+
+		.galery-vehiculo{
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+			grid-gap: 10px;
+		}
+
+			.galery-vehiculo figure{
+				width: 100px;
+				height: 100px;
+				padding: 2rem;
+				background: white;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: black;
+				font-size: 1.5rem
+			}
 
 	/* Modulo de Despacho*/
 
 	/*footer*/
 	footer{
-		background: black;
+		background: grey;
 		color: white;
 		padding: 2px 5px;
 		grid-area: footer;
+		font-size: 12px;
 	}
 
 		footer ul{

@@ -11,52 +11,61 @@
 </head>
 <body>
 	<header>
-		<nav>
-			<figure>
-				<img src="img/logo3.png" alt="" class="w-100 h-100">
-			</figure>
+		<ul>
+			<li>
+				<i class="bi bi-speedometer2"></i>
+				<span>Dashboard</span>
+			</li>
+			<li>
+				<i class="bi bi-file-richtext"></i>
+				<span>Revisión</span>
+			</li>
+			<li>
+				<i class="bi bi-card-checklist"></i>
+				<span>Recepción</span>
+			</li>
+			<li>
+				<i class="bi bi-diagram-3"></i>
+				<span>Distribución</span>
+			</li>
+			<li>
+				<i class="bi bi-clipboard-check"></i>
+				<span>Estatus</span>
+			</li>
+			<li>
+				<i class="bi bi-list-check"></i>
+				<span>Entregados</span>
+			</li>
+			<li>
+				<i class="bi bi-ui-checks"></i>
+				<span>Ordenes</span>
+			</li>
+			<li>
+				<i class="bi bi-journal-check"></i>
+				<span>Cotizaciones</span>
+			</li>
+			<li>
+				<i class="bi bi-inboxes-fill"></i>
+				<span>Respuesto</span>
+			</li>
+		</ul>
+	</header>
+	<nav>
+		<div class="TitSys">
+			<span>Siscovit</span>
+		</div>
+		<div style="display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 0 1rem">
+			<div class="btn-nav">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 			<ul>
-				<li>
-					<span>Dashboard</span>
-				</li>
-				<li>
-					<i class="fas fa-car"> </i>
-					<span>Revisión</span>
-				</li>
-				<li>
-					<i class="fas fa-office"> </i>
-					<span>Recepción</span>
-				</li>
-				<li>
-					<i class="fas fa-user"> </i>
-					<span>Distribución</span>
-				</li>
-				<li>
-					<i class="fas fa-user"> </i>
-					<span>Estatus</span>
-				</li>
-				<li>
-					<i class="fas fa-user"> </i>
-					<span>Entregados</span>
-				</li>
-				<li>
-					<i class="fas fa-user"> </i>
-					<span>Ordenes</span>
-				</li>
-				<li>
-					<i class="fas fa-user"> </i>
-					<span>Cotizaciones</span>
-				</li>
-				<li>
-					<i class="fas fa-user"> </i>
-					<span>Respuesto</span>
-				</li>
-			</ul>
-			<ul>
+				<li><i class="bi bi-file-person"></i> Name User</li>
 				<li><a href="index.php"><i class="bi bi-box-arrow-right"></i></a></li>
 			</ul>
-		</nav>
-	</header>
+		</div>
+	</nav>
 	<section class="contenidos">
 		<article class="general" id="admin-general">
 			<div class="top_general container-xxl">
