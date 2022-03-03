@@ -20,12 +20,16 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Tepeno', serif;
-	text-decoration: none;
 }
+
+a{ text-decoration: none;}
+
+figure{ margin: 0 }
 
 ul{
 	list-style: none;
-	padding-left: 0 !important;
+	padding-left: 0;
+	margin-bottom: 0;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -54,9 +58,9 @@ textarea{
 
 body{
 	display: grid;
-	grid-template-columns: 60px 1fr;
-	grid-template-rows: 50px 1fr auto;
-	grid-template-areas: 'nav nav' 'header contenidos' 'header footer';
+	grid-template-columns: 70px 1fr;
+	grid-template-rows: 1fr 20px;
+	grid-template-areas: 'header contenidos' 'header footer';
 	height: 100vh;
 	overflow: hidden
 }
@@ -70,67 +74,106 @@ body{
 		display: flex;
 		flex-direction: column;
 		grid-area: header;
-		background: purple
-	}
-
-		header ul{
-			display: flex;
-			justify-content: space-between;
-			flex-direction: column;
-			align-items: center;
-			list-style: none;
-			margin-bottom: 0;
-		}
-
-		header ul li{
-			width: 100%;
-			padding: 4px;
-			text-align: center;
-			transition: 0.5s;
-			display: flex;
-			font-size: 20px;
-		}
-
-		header ul li:hover{
-			background: orange;
-			cursor: pointer;
-			transition: 1s;
-			transform: translateY(5px);
-			color: white;
-			border-radius: 0px 0px 10px 10px;
-		}
-
-	/*nav*/
-	nav{
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
+		background: purple;
+		position: relative;
 		justify-content: space-between;
-		align-items: center;
-		background: #cf1f1f;
-		color: white;
-		width: 100%;
-		grid-area: nav;
 	}
 
-		.TitSys{
+	.H-Header{
+		display: flex;
+		align-items: center;
+		height: 80px;		
+		padding: 1rem 0.5rem;
+	}
+
+		.H-Btn{
+			position: absolute;
+			top: 5%;
+			right: -80%;
+			transform: translate(-80%, -50%);
+		}
+			.H-Btn span{
+				display: block;
+				margin: 3px 0;
+				height: 4px;
+				background: grey;
+				width: 25px;
+			}
+
+		.HH-Title{
+			display: none;
+		}
+
+		nav{
+			width: 280px;
+		}
+
+			nav ul{
+				list-style: none;
+				padding-left: 0rem;
+				margin-bottom: 0;
+			}
+
+			nav ul li{
+				padding: 0.2rem 1rem 0.2rem 0.5rem;
+			}
+
+			.N-items{
+			    color: white;
+			    display: flex;
+			    justify-content: space-between;
+			    border-radius: 6px;
+			}
+
+				.N-items i:hover{ background: #00000085; }
+			
+			.N-items i{ 
+				width: 18%; 
+				font-size: 1.3rem; 
+				text-align: center;
+				border-radius: 6px; 
+				padding: 0.3rem;
+			}
+			
+			.N-span{ 
+				display: none;
+				justify-content: space-between;
+				align-items: center;
+				width: 100%; 
+			}
+
+			/*.N-items span:first-of-type{
+				background: purple;
+				width: 100%;
+			}*/
+
+			/*.N-items span:last-of-type*/
+
+		.H-Title{
 			background: red;
 			height: 100%;
-			width: 160px;
 			display: flex;
 			align-items: center;
 			padding-left: 1rem;
 			font-size: 2rem
 		}
 
+		.H-Footer{
+			padding: 0.5rem 0.8rem;
+		}
+
+		.HF-Data{
+			display: none;
+		}
+
 	/*section*/
 	.contenidos{
-		background: #f1f1f1;
+		/*background: #f1f1f1;*/
+		background: #f4f4f4;
 		grid-area: contenidos;
 		overflow-y: auto;
 	}
+
 		.general{
 			height: 100%;
 		    padding: 2rem;
@@ -168,8 +211,9 @@ body{
 					flex-direction: column;
 					justify-content: space-around; 
 					height: 100%;
-					background: #951b0c;
+					background: #fff;
 				    border-radius: 6px;
+				    color: #252627
 				}
 
 				.top_boton_nav ul{
@@ -203,6 +247,28 @@ body{
 			.top_repuestos{ background: url(../img/repuestos.jpg); background-size: 100% 100%;}
 
 			.top_almacen{ background: url(../img/almacen.jpg); background-size: 100% 100%;}
+
+	/*footer*/
+	footer{
+		background: grey;
+		color: white;
+		padding: 2px 5px;
+		grid-area: footer;
+		font-size: 12px;
+	}
+
+		footer ul{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-between;
+			list-style: none;
+			margin-bottom: 0;
+		}
+
+
 
 	/* modulo recepción */
 	.rec{
@@ -247,23 +313,3 @@ body{
 			}
 
 	/* Modulo de Despacho*/
-
-	/*footer*/
-	footer{
-		background: grey;
-		color: white;
-		padding: 2px 5px;
-		grid-area: footer;
-		font-size: 12px;
-	}
-
-		footer ul{
-			display: -webkit-flex;
-			display: -moz-flex;
-			display: -ms-flex;
-			display: -o-flex;
-			display: flex;
-			justify-content: space-between;
-			list-style: none;
-			margin-bottom: 0;
-		}
