@@ -293,7 +293,13 @@
 				<canvas id="myChart" style="width:100%;"></canvas>
 			</div>
 			<div class="GBRight">
-				<div class="table-responsive">
+				<div class="GBRUno" style="">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, sed!
+				</div>
+				<div class="GBRDos" style="">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, sed!
+				</div>
+				<div class="GBRList table-responsive">
 					<table class="table caption-top">
 					  <caption>Lista Asistencia</caption>
 					  <thead>
