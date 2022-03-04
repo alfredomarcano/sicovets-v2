@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Sicovets - Sistema de Control para Vehiculos de Talleres y Seguros</title>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="icons/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/grid.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="js/Chart.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -125,29 +126,89 @@
 		</div>
 	</header>
 	<section class="contenidos">
-		<article class="general" id="admin-general">
-			<div class="top_general container-xxl">
-				<div class="top_nav">
-					<ul>
-						<li class="d-flex justify-content-between">
-							<h5>Recibidos</h5>
-							<span>15</span>
-						</li>
-						<li class="d-flex justify-content-between">
-							<h5>Entregados</h5>
-							<span>15</span>
-						</li>
-						<li class="d-flex justify-content-between">
-							<h5>Ordenes</h5>
-							<span>15</span>
-						</li>
-						<li class="d-flex justify-content-between">
-							<h5>Repuestos</h5>
-							<span>15</span>
-						</li>
-					</ul>
+		<article class="General" id="admin-general">
+			<div class="GTLeft">
+				<div class="GTNav">
+					<div class="GTNItems">
+						<ul class="d-flex justify-content-between">
+							<li><h5>Recibidos</h5></li>
+							<li><span>15</span></li>
+						</ul>
+						<div class="table-responsive">
+							<table class="table caption-top">
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>Cliente</th>
+										<th>Vehiculo</th>
+										<th>Estatus</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Jose Guiti</td>
+										<td>Toyota Corolla 1.6</td>
+										<td class="GTNIStatus-1">
+											<i class="bi bi-check-circle"></i>
+										</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Francis Ramos</td>
+										<td>Chevrolet Cruse</td>
+										<td class="GTNIStatus-1">
+											<i class="bi bi-check-circle"></i>
+										</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>German Alvatro</td>
+										<td>Ford Fiesta</td>
+										<td class="GTNIStatus-2">
+											<i class="bi bi-eye"></i>
+										</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>Elizabeth Petri</td>
+										<td>Hyunday Elantra</td>
+										<td class="GTNIStatus-3">
+											<i class="bi bi-eye-slash"></i>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="GTNItems">
+						<ul>
+							<li class="d-flex justify-content-between">
+								<h5>Entregados</h5>
+								<span>15</span>
+							</li>
+						</ul>
+					</div>
+					<div class="GTNItems">
+						<ul>
+							<li class="d-flex justify-content-between">
+								<h5>Ordenes</h5>
+								<span>15</span>
+							</li>
+						</ul>
+					</div>
+					<div class="GTNItems">
+						<ul>
+							<li class="d-flex justify-content-between">
+								<h5>Repuestos</h5>
+								<span>15</span>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div class="top_recibidos top_boton_nav">
+			</div>
+			<div class="GTRight">
+				<div class="top_boton_nav">
 					<a href="recepcion.php">
 						<ul>
 							<li>Recepción</li>
@@ -155,7 +216,8 @@
 						</ul>
 					</a>
 				</div>
-				<div class="top_despacho top_boton_nav">
+
+				<div class="top_boton_nav">
 					<a href="">
 						<ul>
 							<li>Despacho</li>
@@ -163,7 +225,8 @@
 						</ul>
 					</a>
 				</div>
-				<div class="top_mecanica top_boton_nav">
+				
+				<div class="top_boton_nav">
 					<a href="">
 						<ul>
 							<li>Mecanica</li>
@@ -171,7 +234,8 @@
 						</ul>
 					</a>
 				</div>
-				<div class="top_latoneria top_boton_nav">
+				
+				<div class="top_boton_nav">
 					<a href="">
 						<ul>
 							<li>Latoneria</li>
@@ -179,7 +243,8 @@
 						</ul>
 					</a>
 				</div>
-				<div class="top_pintura top_boton_nav">
+				
+				<div class="top_boton_nav">
 					<a href="">
 						<ul>
 							<li>Pintura</li>
@@ -187,7 +252,8 @@
 						</ul>
 					</a>
 				</div>
-				<div class="top_pulitura top_boton_nav">
+				
+				<div class="top_boton_nav">
 					<a href="">
 						<ul>
 							<li>Pulitura</li>
@@ -195,7 +261,8 @@
 						</ul>
 					</a>
 				</div>
-				<div class="top_repuestos top_boton_nav">
+				
+				<!-- <div class="top_boton_nav">
 					<a href="">
 						<ul>
 							<li>Repuestos</li>
@@ -203,7 +270,8 @@
 						</ul>
 					</a>
 				</div>
-				<div class="top_almacen top_boton_nav">
+				
+				<div class="top_boton_nav">
 					<a href="">
 						<ul>
 							<li>Almacen</li>
@@ -211,13 +279,64 @@
 						</ul>
 					</a>
 				</div>
-				<div class="top_pulitura top_boton_nav">
+				
+				<div class="top_boton_nav">
 					<a href="">
 						<ul>
 							<li>Cotizaciones</li>
 							<li><h5>16</h5></li>
 						</ul>
 					</a>
+				</div>  -->
+			</div>
+			<div class="GBLeft">
+				<canvas id="myChart" style="width:100%;"></canvas>
+			</div>
+			<div class="GBRight">
+				<div class="table-responsive">
+					<table class="table caption-top">
+					  <caption>Lista Asistencia</caption>
+					  <thead>
+					    <tr>
+					      <th scope="col">#</th>
+					      <th scope="col">First</th>
+					      <th scope="col">Last</th>
+					      <th scope="col">Handle</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <th scope="row">1</th>
+					      <td>Mark</td>
+					      <td>Otto</td>
+					      <td>@mdo</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">2</th>
+					      <td>Jacob</td>
+					      <td>Thornton</td>
+					      <td>@fat</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">3</th>
+					      <td>Larry</td>
+					      <td>the Bird</td>
+					      <td>@twitter</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">3</th>
+					      <td>Larry</td>
+					      <td>the Bird</td>
+					      <td>@twitter</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">3</th>
+					      <td>Larry</td>
+					      <td>the Bird</td>
+					      <td>@twitter</td>
+					    </tr>
+					  </tbody>
+					</table>	
 				</div>
 			</div>
 		</article>
@@ -228,7 +347,32 @@
 			<li>lorem</li>
 			<li>lorem</li>
 			<li>lorem</li>
+			&copy;<script>document.write(new Date().getFullYear());</script>
 		</ul> -->
 	</footer>
+
+	<script>
+var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+var yValues = [55, 49, 44, 24, 15];
+var barColors = ["red", "green","blue","orange","brown"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "World Wine Production 2018"
+    }
+  }
+});
+</script>
 </body>
 </html>

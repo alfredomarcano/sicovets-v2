@@ -67,12 +67,10 @@ body{
 
 	/*header*/
 	header{
-		background: purple;
+		background: #2b315c;
 		grid-area: header;
-		display: grid;
-		grid-template-rows: 70px 1fr 45px;
-		grid-template-areas: 'H-Header' 'nav' 'H-Footer';
-		position: relative;
+		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
 	}
 
@@ -81,12 +79,7 @@ body{
 		align-items: center;
 		height: 80px;		
 		padding: 1rem 0.5rem;
-		grid-area: H-Header;
 	}
-
-		.H-Header figure, .H-Footer figure{
-			width: 35px;
-		}
 
 		.H-Btn{
 			position: absolute;
@@ -108,7 +101,6 @@ body{
 
 	nav{
 		width: 280px;
-		grid-area: nav;
 	}
 
 		nav ul{
@@ -145,16 +137,8 @@ body{
 			width: 100%; 
 		}
 
-		/*.N-items span:first-of-type{
-			background: purple;
-			width: 100%;
-		}*/
-
-		/*.N-items span:last-of-type*/		
-
 	.H-Footer{
 		padding: 0.5rem 0.8rem;
-		grid-area: H-Footer;
 	}
 
 		.HF-Data{
@@ -163,86 +147,99 @@ body{
 
 	/*section*/
 	.contenidos{
-		/*background: #f1f1f1;*/
-		background: #f4f4f4;
+		background: #e2e2e2;
 		grid-area: contenidos;
 		overflow-y: auto;
 	}
 
-		.general{
+		.General{
 			height: 100%;
-		    padding: 2rem;
+		    padding: 1.5rem;
+		    display: grid;
+		    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+		    grid-gap: 15px;
 		}
 
-			.top_general {
-			    display: grid;
-			    grid-template-columns: 200px repeat(3, 1fr);
-			    grid-template-rows: repeat(200px, 1fr);
-			    grid-gap: 20px;
-			    height: 100%;
-			}
-			.top_general a{ text-decoration: none; color: white; font-size: 20px}
-
-			.top_general > div{
-				box-shadow: 3px 4px 12px -2px #25262766; 	
-				/*height: 200px;*/
+			.GTLeft, .GTRight, .GBLeft, .GBRight{
+				background: white;
+				box-shadow: 0px 0px 8px -1px #25262755;
+				padding: 1rem;
+				border-radius: 12px;
 			}
 
-			.top_nav:nth-child(1) {
-				background: #951b0c !important;
-				grid-row: 1/4;
-				grid-column: 1/2;
-				height: 100%;
+			.GTLeft{
+				height:100%;
 			}
-			
-			.top_nav, .top_boton_nav{
-				border-radius: 6px;
-				color: white;
-				position: relative;
-			}
+				.GTNItems ul{
+					padding: 0.5rem 1rem;
+					border-radius: 12px;
+					margin-bottom: 0.5rem;
+					color: white;
+					font-weight: bold;
+				}
 
-				.top_nav ul{ 
-					display: flex;
-					flex-direction: column;
-					justify-content: space-around; 
-					height: 100%;
-					background: #fff;
-				    border-radius: 6px;
-				    color: #252627
+				.GTNItems:nth-child(1) ul{ background: green; }
+				.GTNItems:nth-child(2) ul{ background: orange; }
+				.GTNItems:nth-child(3) ul { background: skyblue; }
+				.GTNItems:nth-child(4) ul {background: burlywood; }
+
+					.GTNIStatus-1 i{ background: green; font-size: 1.2rem; border-radius: 8px; color: white; padding: 0.5rem}
+					.GTNIStatus-2 i{ background: yellow; font-size: 1.2rem; border-radius: 8px; color: white; padding: 0.5rem}
+					.GTNIStatus-3 i{ background: red; font-size: 1.2rem; border-radius: 8px; color: white; padding: 0.5rem}
+
+
+			.GTRight{
+				display: grid;
+				border-radius: 12px;
+				grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+				grid-gap: 20px;
+			}
+				.top_boton_nav{
+					min-height: 150px;
+					margin-bottom: 0.5rem;
+					position: relative;
+					border-radius: 12px;
 				}
 
 				.top_boton_nav ul{
+					border-radius: 0px 0px 12px 12px;
 					text-shadow: 1px 1px 1px black;
-				    font-size: 1.5rem;
-				    position: absolute;
-				    bottom: 0;
-				    left: 0rem;
+				    font-size: 1rem;
 				    background: linear-gradient(45deg, #252627f3, transparent);
-				    width: 100%;
-				    padding: 0.2rem 0.7rem !important;
+				    padding: 0.7rem;
 				    margin-bottom: 0;
+				    color: white;
 				    display: flex;
 				    justify-content: space-between;
 				    align-items: center;
+				    position: absolute;
+				    bottom: 0;
 				}
 
+					.top_boton_nav ul li:nth-last-of-type{
+						background: red;
+					}
 
-			.top_recibidos{ background: url(../img/recepcion.jpg); background-size: 100% 100%;}
-			
-			.top_despacho{ background: url(../img/despacho.jpg); background-size: 100% 100%;}
-			
-			.top_pintura{ background: url(../img/pintura.jpg); background-size: 100% 100%;}
-			
-			.top_mecanica{ background: url(../img/mecanica.jpg); background-size: 100% 100%;}
-			
-			.top_pulitura{ background: url(../img/pulitura.png); background-size: 100% 100%;}
-			
-			.top_latoneria{ background: url(../img/latoneria.png); background-size: 100% 100%;}
+					.top_boton_nav:nth-child(1){ background: url(../img/recepcion.jpg); background-size: cover; background-position: right;}
+					
+					.top_boton_nav:nth-child(2){ background: url(../img/despacho.jpg); background-size: cover; background-position: right;}
+					
+					.top_boton_nav:nth-child(3){ background: url(../img/pintura.jpg); background-size: cover; background-position: right;}
+					
+					.top_boton_nav:nth-child(4){ background: url(../img/mecanica.jpg); background-size: cover; background-position: right;}
+					
+					.top_boton_nav:nth-child(5){ background: url(../img/pulitura.png); background-size: cover; background-position: right;}
+					
+					.top_boton_nav:nth-child(6){ background: url(../img/latoneria.png); background-size: cover; background-position: right;}
 
-			.top_repuestos{ background: url(../img/repuestos.jpg); background-size: 100% 100%;}
+					.top_boton_nav:nth-child(7){ background: url(../img/repuestos.jpg); background-size: cover; background-position: right;}
 
-			.top_almacen{ background: url(../img/almacen.jpg); background-size: 100% 100%;}
+					.top_boton_nav:nth-child(8){ background: url(../img/almacen.jpg); background-size: cover; background-position: right;}
 
+
+			.GBLeft{
+				
+			}
 	/*footer*/
 	footer{
 		background: grey;
