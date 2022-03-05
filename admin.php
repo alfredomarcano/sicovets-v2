@@ -6,7 +6,6 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="icons/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/grid.css">
 	<script type="text/javascript" src="js/Chart.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
 </head>
@@ -134,8 +133,8 @@
 							<li><h5>Recibidos</h5></li>
 							<li><span>15</span></li>
 						</ul>
-						<div class="table-responsive">
-							<table class="table caption-top">
+						<div class="table-responsive" style="height: 370px; overflow-y: auto;">
+							<table class="table caption-top table-scrool">
 								<thead>
 									<tr>
 										<th>#</th>
@@ -177,6 +176,38 @@
 											<i class="bi bi-eye-slash"></i>
 										</td>
 									</tr>
+									<tr>
+										<td>5</td>
+										<td>Yessica Angola</td>
+										<td>Fiat Palio 1.8</td>
+										<td class="GTNIStatus-3">
+											<i class="bi bi-eye-slash"></i>
+										</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>Paulo Terno</td>
+										<td>Chevrolet Optra</td>
+										<td class="GTNIStatus-3">
+											<i class="bi bi-eye-slash"></i>
+										</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>Luis Contreras</td>
+										<td>Kia Picanto</td>
+										<td class="GTNIStatus-3">
+											<i class="bi bi-eye-slash"></i>
+										</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>Alvaro Simeta</td>
+										<td>Chevrolet Spark</td>
+										<td class="GTNIStatus-3">
+											<i class="bi bi-eye-slash"></i>
+										</td>
+									</tr>
 								</tbody>
 							</table>
 						</div>
@@ -207,6 +238,7 @@
 					</div>
 				</div>
 			</div>
+			
 			<div class="GTRight">
 				<div class="top_boton_nav">
 					<a href="recepcion.php">
@@ -289,60 +321,20 @@
 					</a>
 				</div>  -->
 			</div>
+
 			<div class="GBLeft">
-				<canvas id="myChart" style="width:100%;"></canvas>
+				<canvas id="myChart" style="width:100%; height: 100%;"></canvas>
 			</div>
+			
 			<div class="GBRight">
 				<div class="GBRUno" style="">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, sed!
+					Calendario
 				</div>
 				<div class="GBRDos" style="">
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, sed!
 				</div>
-				<div class="GBRList table-responsive">
-					<table class="table caption-top">
-					  <caption>Lista Asistencia</caption>
-					  <thead>
-					    <tr>
-					      <th scope="col">#</th>
-					      <th scope="col">First</th>
-					      <th scope="col">Last</th>
-					      <th scope="col">Handle</th>
-					    </tr>
-					  </thead>
-					  <tbody>
-					    <tr>
-					      <th scope="row">1</th>
-					      <td>Mark</td>
-					      <td>Otto</td>
-					      <td>@mdo</td>
-					    </tr>
-					    <tr>
-					      <th scope="row">2</th>
-					      <td>Jacob</td>
-					      <td>Thornton</td>
-					      <td>@fat</td>
-					    </tr>
-					    <tr>
-					      <th scope="row">3</th>
-					      <td>Larry</td>
-					      <td>the Bird</td>
-					      <td>@twitter</td>
-					    </tr>
-					    <tr>
-					      <th scope="row">3</th>
-					      <td>Larry</td>
-					      <td>the Bird</td>
-					      <td>@twitter</td>
-					    </tr>
-					    <tr>
-					      <th scope="row">3</th>
-					      <td>Larry</td>
-					      <td>the Bird</td>
-					      <td>@twitter</td>
-					    </tr>
-					  </tbody>
-					</table>	
+				<div class="GBRList">
+					listado de asistencia
 				</div>
 			</div>
 		</article>

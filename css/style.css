@@ -90,7 +90,7 @@ body{
 			.H-Btn{
 				position: absolute;
 				top: 5%;
-				right: 6%;
+				left: 6%;
 				transform: translate(-6%, -5%);
 			}
 				.H-Btn span{
@@ -162,6 +162,7 @@ body{
 		    padding: 1.5rem;
 		    display: grid;
 		    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+		    grid-template-rows: repeat(5, 185px);
 		    grid-gap: 15px;
 		}
 
@@ -174,13 +175,20 @@ body{
 
 			.GTLeft{
 				height:100%;
+				grid-row: 1 / 4; 
+				grid-column: 1 / 2;
 			}
+
 				.GTNItems ul{
 					padding: 0.5rem 1rem;
 					border-radius: 12px;
 					margin-bottom: 0.5rem;
 					color: white;
 					font-weight: bold;
+				}
+				.table-scrool tbody{
+					height: 20vh;
+					overflow-y: auto;
 				}
 
 				.GTNItems:nth-child(1) ul{ background: green; }
@@ -197,7 +205,9 @@ body{
 				display: grid;
 				border-radius: 12px;
 				grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-				grid-gap: 20px;
+				grid-gap: 15px;
+				grid-row: 1 / 3; 
+				grid-column: 2 / 3;
 			}
 				.top_boton_nav{
 					min-height: 150px;
@@ -207,6 +217,7 @@ body{
 				}
 
 				.top_boton_nav ul{
+					width: 100%;
 					border-radius: 0px 0px 12px 12px;
 					text-shadow: 1px 1px 1px black;
 				    font-size: 1rem;
@@ -242,15 +253,19 @@ body{
 					.top_boton_nav:nth-child(8){ background: url(../img/almacen.jpg); background-size: cover; background-position: right;}
 
 			.GBLeft{
-					
+				grid-row: 4 / 6; 
+				grid-column: 1 / 2;
 			}
 
 			.GBRight{
 				display: grid;
 				grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 				grid-template-rows: repeat(2, 1fr);
-				grid-gap: 10px;
+				grid-gap: 15px;
+				grid-row: 3 / 6; 
+				grid-column: 2 / 3;
 			}
+
 				.GBRUno{ grid-column: 1 / 1; grid-row: 2 / 2; background: white; padding: 1rem; border-radius: 12px;}
 
 				.GBRDos{ background: white; padding: 1rem; border-radius: 12px;}
