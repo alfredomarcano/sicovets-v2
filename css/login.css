@@ -25,10 +25,10 @@
 }
 
 .panel-img{
-	width: 60%;
+	width: 50%;
 	position: relative;
 	background: #5698b7;
-	border-radius: 10px 20px 20px 10px;
+	border-radius: 10px 0px 0px 10px;
 }
 	.panel-img figure{
 		height: 100%;
@@ -41,8 +41,8 @@
 
 .panel_login{
 	background: #fff;
-	padding: 2.5em;
-	width: 40%;
+	padding: 3rem 6em;
+	width: 50%;
 	border-radius: 10px;
 	/*margin: -2.5rem -1rem -2.5rem 0;*/
 }

@@ -334,7 +334,20 @@
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, sed!
 				</div>
 				<div class="GBRList">
-					listado de asistencia
+					<?php for ($i=0; $i < 10; $i++) { ?>
+						<div id="$i" class="GBRList-Items">
+							<figure style="width: 50px; height:50px; border-radius: 50%;">
+								<img src="img/perfiles/perfil_1.jpg" width="100%" height="100%" style="object-fit: cover; border-radius: 50%;">
+							</figure>
+							<ul>
+								<li>Carlos Hernandez</li>
+								<li>Latonero Principal</li>
+							</ul>
+							<div>
+								<?php echo date('H:m:s'); ?>
+							</div>
+						</div>
+					<?php } ?>
 				</div>
 			</div>
 		</article>
