@@ -92,7 +92,9 @@ body{
 				top: 5%;
 				left: 6%;
 				transform: translate(-6%, -5%);
+				transition: 1s;
 			}
+
 				.H-Btn span{
 					display: block;
 					margin: 3px 0;
@@ -180,8 +182,8 @@ body{
 			}
 
 				.GTNItems ul{
-					padding: 0.5rem 1rem;
-					border-radius: 12px;
+					padding: 0.3rem 0.8rem;
+					border-radius: 8px;
 					margin-bottom: 0.5rem;
 					color: white;
 					font-weight: bold;
@@ -196,9 +198,9 @@ body{
 				.GTNItems:nth-child(3) ul { background: skyblue; }
 				.GTNItems:nth-child(4) ul {background: burlywood; }
 
-					.GTNIStatus-1 i{ background: green; font-size: 1.2rem; border-radius: 8px; color: white; padding: 0.5rem}
-					.GTNIStatus-2 i{ background: yellow; font-size: 1.2rem; border-radius: 8px; color: white; padding: 0.5rem}
-					.GTNIStatus-3 i{ background: red; font-size: 1.2rem; border-radius: 8px; color: white; padding: 0.5rem}
+					.GTNIStatus-1 i{ background: green; font-size: 0.8rem; border-radius: 8px; color: white; padding: 0.5rem}
+					.GTNIStatus-2 i{ background: yellow; font-size: 0.8rem; border-radius: 8px; color: white; padding: 0.5rem}
+					.GTNIStatus-3 i{ background: red; font-size: 0.8rem; border-radius: 8px; color: white; padding: 0.5rem}
 
 
 			.GTRight{

@@ -1,4 +1,5 @@
-<section>
+<?php include('pages/header.php'); ?>
+<section class="contenidos">
 	<article class="container-xxl">
 		<div id="recepciones" class="mb-3">
 			<div class="row">
@@ -339,3 +340,4 @@
 		</div>
 	</article>
 </section>
+<?php include('pages/footer.php') ?>
